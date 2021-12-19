@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.uts_pbp_d_9229">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UTS_PBP_C_9229"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.uts_pbp_d_9229.view.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.uts_pbp_d_9229.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.uts_pbp_d_9229.adapter.RecyclerViewHome"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.uts_pbp_d_9229.view.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.uts_pbp_d_9229.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.uts_pbp_d_9229.SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name="com.uts_pbp_d_9229.WelcomeScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
